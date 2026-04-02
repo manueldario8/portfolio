@@ -1,12 +1,14 @@
 .navbar {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     height: 7rem;
-    margin-bottom: 4rem;
-    justify-content: center;  
+    padding: 0 3rem;
     box-shadow: 0 10px 10px rgba(0,0,0,.3);
 }
 
+
+/* THEMES */
 .navbar.light {
     background-color: #03627E;
 }
@@ -14,45 +16,87 @@
     background-color: #222125;
 }
 
-.nav-container-one, .nav-container-two {
+/* SECTIONS */
+.nav-left {
     display: flex;
     align-items: center;
-    padding: 1.2rem;
-    margin: 0.3rem;
+    margin-left: 90px;
 }
 
-.left-nav-div, .center-nav-div, .right-nav-div {
-    position: relative;
-    margin: 2rem;
+.nav-center {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
-.left-nav-div a {
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* LOGO */
+.logo {
     text-decoration: none;
     color: #dae3d9;
-}
-
-.left-nav-div p {
-    font-size: 24px;
+    font-size: 1.8rem;
     font-weight: bold;
 }
-
-.center-nav-div a {
+/* LINKS */
+.nav-center a {
     text-decoration: none;
-    margin: 1.5rem;
     color: #dae3d9;
+    font-size: 1.6rem;
+    position: relative;
+    transition: all 0.25s ease;
 }
 
-.git-icon {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 50%;
-    right: 65px;
-    transform: translateY(-50%);
+/* HOVER EFFECT */
+.nav-center a:hover, .logo:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255,255,255,0.6);
+    transform: translateY(-2px);
 }
 
-.flag-icon {
+/* underline animado */
+.nav-center a::after, .logo::after {
+    content: "";
     position: absolute;
-    width: 40px;
-    height: 40px;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.nav-center a:hover::after, .logo:hover::after {
+    width: 100%;
+}
+
+/* SOURCE LINK (icon + text) */
+.source-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ICONOS */
+.icon {
+    width: 28px;
+    height: 28px;
+}
+
+/* BOTONES LIMPIOS */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* CONTENEDORES DE ACCIONES */
+.nav-actions {
+    display: flex;
+    align-items: center;
 }

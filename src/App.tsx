@@ -8,6 +8,7 @@ import { Navbar } from './components/exports';
 function App() {
 
   const [variant, setVariant] = useState<"light" | "dark">("light");
+  const [language, setLanguage] = useState<"es" | "en">("es");
 
   useEffect(() => {
     document.body.className = variant;
@@ -19,7 +20,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
-        <Route element={<Navbar variant={variant} setVariant={setVariant}/>}>
+        <Route element={<Navbar variant={variant} setVariant={setVariant} language={language} setLanguage={setLanguage}/>}>
           <Route path="/home" element={<Home />} />
         </Route>
       </Routes>
