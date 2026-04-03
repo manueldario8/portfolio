@@ -7,8 +7,12 @@
 
 body.light {
     background: #EDDEE0;
+    
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 body.dark {
     background: #202023;  
+    
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
