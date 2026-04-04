@@ -1,3 +1,4 @@
+import './button.css';
 import { useTheme } from "../../../context/ThemeContext";
 
 type ButtonProps = {

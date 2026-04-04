@@ -1,38 +1,41 @@
 import './dashboard.css';
-import { Carousel, Card, Button } from '../../exports';
+import { Carousel, CarouselCard, Button } from '../../exports';
+import { useTheme } from '../../../context/ThemeContext';
+import { Naruto, Sasuke, Sakura, Gaara, Temari, Kankuro, Rocklee, Tenten, Neji } from '../../../assets/exports';
 
 
 const Dashboard = () => {
+    const { theme } = useTheme();
     return (
         <>
-            <header className='preview'>
+            <header className={`preview pv-${theme}`}>
                 <div className="devname">
                     <h2>Software Developer</h2>
                     <h1>Manuel Darío</h1>
                 </div>
                 <span><p>Fullstack .NET & React</p></span>
                 <span className="buttons-contact">
-                    <Button onClick={() => window.open("https://linkedin.com")}>
-  LinkedIn
-</Button>
-<Button onClick={() => window.open("https://google.com")}>
-  Github
-</Button>
+                    <Button onClick={() => window.open("https://www.linkedin.com/in/manueldario8")}>
+                        LinkedIn
+                    </Button>
+                    <Button onClick={() => window.open("https://google.com")}>
+                        Descargar CV
+                    </Button>
                 </span>
             </header>
             <main className="dashboard">
                 <section> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ab? Voluptas consectetur ducimus atque culpa corporis enim! Maxime dolorum facilis voluptas, cum odio molestias nam necessitatibus expedita suscipit ab et?</p></section>
-                <Card title="Test1" description="Probando" link="https://google.com">
-                    <Carousel />
-                </Card>
+                <CarouselCard>
+                    <Carousel images={[Naruto, Sakura, Sasuke]} />
+                </CarouselCard>
                 <section> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ab? Voluptas consectetur ducimus atque culpa corporis enim! Maxime dolorum facilis voluptas, cum odio molestias nam necessitatibus expedita suscipit ab et?</p></section>
-                <Card title="Test2" description="Probando" link="https://google.com">
-                    <Carousel />
-                </Card>
+                <CarouselCard>
+                    <Carousel images={[Gaara, Kankuro, Temari]} />
+                </CarouselCard>
                 <section> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ab? Voluptas consectetur ducimus atque culpa corporis enim! Maxime dolorum facilis voluptas, cum odio molestias nam necessitatibus expedita suscipit ab et?</p></section>
-                <Card title="Test3" description="Probando" link="https://google.com">
-                    <Carousel />
-                </Card>
+                <CarouselCard>
+                    <Carousel images={[Tenten, Neji, Rocklee]} />
+                </CarouselCard>
             </main>
         </>
     );
