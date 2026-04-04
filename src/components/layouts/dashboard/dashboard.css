@@ -1,0 +1,57 @@
+.preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    background: #272729;
+    height: 50vh;
+    padding-top: 10rem;
+}
+
+.devname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.devname h1 {
+    color:#EDDEE0;
+    font-size: 4rem; 
+}
+
+.devname h2 { 
+    font-size: 4rem; 
+    color: rgb(248, 246, 138);
+}
+
+.devname h1:hover, h2:hover {
+    text-shadow: 0 0 8px rgba(255,255,255,0.6);
+    /*transform: translateY(-2px);*/
+    transition: all 0.25s ease;
+}
+
+.preview  span p {
+    color:#beb3b4;   
+}
+
+.preview  span p:hover {
+    text-shadow: 0 0 8px rgba(255,255,255,0.6);
+    /*transform: translateY(-2px);*/
+    transition: all 0.25s ease;  
+}
+
+
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 1rem;
+    margin: 6rem;
+    row-gap: 2rem;
+    align-items: center;
+}
+
+.dashboard section {
+    display: flex;
+    align-items: center;
+}
