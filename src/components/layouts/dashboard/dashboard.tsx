@@ -5,45 +5,45 @@ import { Naruto, Sasuke, Sakura, Gaara, Temari, Kankuro, Rocklee, Tenten, Neji }
 
 const projects = [
     {
-        name: 'Proyecto Naruto',
+        name: 'Stock Manager',
         sections: {
-            summary: {
+            Resumen: {
                 title: 'Resumen',
-                description: 'Descripción general del proyecto Naruto'
+                description: 'Una aplicación web que maneja la subida, edición y administración de productos, proveedores y categorías, con interfaz de usuario amigable'
             },
-            development: {
+            Desarrollo: {
                 title: 'Desarrollo',
-                description: 'Cómo se desarrolló el proyecto Naruto'
+                description: 'En esta aplicación los puntos claves a desarrollar era la posibilidad de integrar procesos de autentificación de ususarios, roles, manejo de datos usando Entity Framework'
             },
-            frontend: {
+            Frontend: {
                 title: 'Frontend',
-                description: 'React, UI, etc'
+                description: 'Para el desarrollo del frontend de esta aplicación utilicé React, CSS, HTML y TypeScript'
             },
-            backend: {
+            Backend: {
                 title: 'Backend',
-                description: '.NET, API, base de datos'
+                description: 'El backend de este proyecto está compuesto por tecnologías del ambiente .NET, principalmente C# y EntityFramework, también su base de datos se maneja con SQL Server, sus sistemas de autentificación se implementan con JWT y la subida de imáenes en el storage con Cloudinary'
             }
         },
-        technologies: ['React', '.NET', 'SQL Server'],
+        technologies: ['React', 'C#', 'SQL Server','HTML', 'CSS','Entity Framework'],
         github: 'https://github.com',
         demo: 'https://demo.com'
     },
     {
         name: 'Proyecto Gaara',
         sections: {
-            summary: {
+            Resumen: {
                 title: 'Resumen',
                 description: 'Descripción general del proyecto Gaara'
             },
-            development: {
+            Desarrollo: {
                 title: 'Desarrollo',
                 description: 'Detalles de desarrollo'
             },
-            frontend: {
+            Frontend: {
                 title: 'Frontend',
                 description: 'Interfaz y lógica cliente'
             },
-            backend: {
+            Backend: {
                 title: 'Backend',
                 description: 'Servicios y base de datos'
             }
@@ -55,19 +55,19 @@ const projects = [
     {
         name: 'Proyecto Lee',
         sections: {
-            summary: {
+            Resumen: {
                 title: 'Resumen',
                 description: 'Descripción general del proyecto Lee'
             },
-            development: {
+            Desarrollo: {
                 title: 'Desarrollo',
                 description: 'Proceso de desarrollo'
             },
-            frontend: {
+            Frontend: {
                 title: 'Frontend',
                 description: 'UI y experiencia'
             },
-            backend: {
+            Backend: {
                 title: 'Backend',
                 description: 'API y lógica'
             }

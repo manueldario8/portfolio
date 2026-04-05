@@ -1,7 +1,7 @@
 import './informationCard.css';
 import { useState } from 'react';
 
-type SectionKey = 'summary' | 'development' | 'frontend' | 'backend';
+type SectionKey = 'Resumen' | 'Desarrollo' | 'Frontend' | 'Backend';
 
 type SectionData = {
   title: string;
@@ -20,11 +20,11 @@ type InformationCardProps = {
   data: ProjectData;
 };
 
-const sections: SectionKey[] = ['summary', 'development', 'frontend', 'backend'];
+const sections: SectionKey[] = ['Resumen', 'Desarrollo', 'Frontend', 'Backend'];
 
 const InformationCard = ({ data }: InformationCardProps) => {
 
-  const [activeSection, setActiveSection] = useState<SectionKey>('summary');
+  const [activeSection, setActiveSection] = useState<SectionKey>('Resumen');
 
   const current = data.sections[activeSection];
 
@@ -33,32 +33,24 @@ const InformationCard = ({ data }: InformationCardProps) => {
       <div className="inner-information">
 
         <div className="up-inner">
-          <h3>Proyecto</h3>
-          <h4>{data.name}</h4>
+          <h3 className='main-sc-title'>Proyecto</h3>
+          <h4 className='main-pj-title'>{data.name}</h4>
 
           <div className="view-actions">
             {sections.map(section => (
-              <button
-                key={section}
-                className="btn-action"
-                onClick={() => setActiveSection(section)}
-              >
+              <button key={section} className="btn-action" onClick={() => setActiveSection(section)}>
                 {section}
               </button>
             ))}
           </div>
-        </div>
-
-        <div className="dw-inner">
+          <section className='card-screem'>
           <h3>{current.title}</h3>
-
-          <h4>{current.title}</h4>
-
           <section>
             <p>{current.description}</p>
           </section>
+          </section>
 
-          <section>
+          <section className=' btn-reviewCode'>
             <a href={data.github} target="_blank" rel="noopener noreferrer">
               <button className="btn-code">Github</button>
             </a>

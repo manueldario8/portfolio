@@ -1,0 +1,102 @@
+.information-container {
+    display: flex;
+    max-width: 800px;
+    height: 600px;
+    justify-content: center;
+}
+
+.inner-information {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+    padding: 3rem 0.5rem; 
+    border-radius: 5%;margin: 0.5rem;
+    
+}
+
+.up-inner {
+    display: flex;
+    gap: 0.6rem;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkgray;
+    background: rgba(0, 0, 0, 0.2); 
+    
+}   
+
+.view-actions {
+    display: flex;
+    max-width: 600px;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: rgb(33, 33, 33);
+    overflow: hidden;
+    margin-bottom: 6rem;
+}
+
+.view-actions .btn-action {
+    flex: 1; 
+    border: none;
+    color: white;
+    height: 100%;
+    margin: 0 1rem;
+}
+
+.view-actions .btn-action:hover {
+    
+    text-shadow: 0 0 10px rgba(255,255,255,0.8);
+    transition: all 0.25s ease;
+}
+
+.main-sc-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(192, 207, 56);
+    text-shadow: 0 0 1px rgb(7, 8, 26);
+}
+
+.main-pj-title {
+    
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(133, 156, 51);
+    text-shadow: 0 0 1px rgb(22, 23, 73);
+}
+
+.card-screem {
+    border: 2px solid rgb(75, 75, 75);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 15px;
+    padding: 1rem;
+    gap: 10px;   
+}
+
+.view-tecnologies {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0.2rem;
+    margin-bottom: 10px;
+}
+
+.btn-reviewCode{
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    gap: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 2px white;
+}
+.btn-reviewCode button {
+    color: rgb(146, 146, 146);
+    margin: 10px;
+}
+
+.btn-reviewCode button:hover {
+    text-shadow: 0 0 5px white;
+}

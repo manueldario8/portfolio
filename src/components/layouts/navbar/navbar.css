@@ -50,8 +50,6 @@
 .nav-center a {
     text-decoration: none;
     color: #dae3d9;
-    /*font-size: 1.6rem;*/
-    position: relative;
     transition: all 0.25s ease;
 }
 
@@ -100,9 +98,7 @@
     gap: 0.5rem;
     text-decoration: none;
     color: #dae3d9;
-    /*font-size: 1.1rem;*/
     padding: 0.4rem 0.8rem;
-    /*border-radius: 6px;*/
     transition: all 0.25s ease;
 }
 
