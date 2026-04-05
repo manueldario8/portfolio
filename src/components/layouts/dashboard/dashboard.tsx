@@ -1,8 +1,82 @@
 import './dashboard.css';
-import { Carousel, CarouselCard, Button } from '../../exports';
+import { Carousel, CarouselCard, Button, InformationCard } from '../../exports';
 import { useTheme } from '../../../context/ThemeContext';
 import { Naruto, Sasuke, Sakura, Gaara, Temari, Kankuro, Rocklee, Tenten, Neji } from '../../../assets/exports';
 
+const projects = [
+    {
+        name: 'Proyecto Naruto',
+        sections: {
+            summary: {
+                title: 'Resumen',
+                description: 'Descripción general del proyecto Naruto'
+            },
+            development: {
+                title: 'Desarrollo',
+                description: 'Cómo se desarrolló el proyecto Naruto'
+            },
+            frontend: {
+                title: 'Frontend',
+                description: 'React, UI, etc'
+            },
+            backend: {
+                title: 'Backend',
+                description: '.NET, API, base de datos'
+            }
+        },
+        technologies: ['React', '.NET', 'SQL Server'],
+        github: 'https://github.com',
+        demo: 'https://demo.com'
+    },
+    {
+        name: 'Proyecto Gaara',
+        sections: {
+            summary: {
+                title: 'Resumen',
+                description: 'Descripción general del proyecto Gaara'
+            },
+            development: {
+                title: 'Desarrollo',
+                description: 'Detalles de desarrollo'
+            },
+            frontend: {
+                title: 'Frontend',
+                description: 'Interfaz y lógica cliente'
+            },
+            backend: {
+                title: 'Backend',
+                description: 'Servicios y base de datos'
+            }
+        },
+        technologies: ['React', 'Node', 'MongoDB'],
+        github: 'https://github.com',
+        demo: 'https://demo.com'
+    },
+    {
+        name: 'Proyecto Lee',
+        sections: {
+            summary: {
+                title: 'Resumen',
+                description: 'Descripción general del proyecto Lee'
+            },
+            development: {
+                title: 'Desarrollo',
+                description: 'Proceso de desarrollo'
+            },
+            frontend: {
+                title: 'Frontend',
+                description: 'UI y experiencia'
+            },
+            backend: {
+                title: 'Backend',
+                description: 'API y lógica'
+            }
+        },
+        technologies: ['Angular', '.NET', 'MySQL'],
+        github: 'https://github.com',
+        demo: 'https://demo.com'
+    }
+];
 
 const Dashboard = () => {
     const { theme } = useTheme();
@@ -23,16 +97,18 @@ const Dashboard = () => {
                     </Button>
                 </span>
             </header>
-            <main className="dashboard">
-                <section> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ab? Voluptas consectetur ducimus atque culpa corporis enim! Maxime dolorum facilis voluptas, cum odio molestias nam necessitatibus expedita suscipit ab et?</p></section>
+            <main className={`dashboard txtc-${theme}`}>
+                <InformationCard data={projects[0]} />
                 <CarouselCard>
                     <Carousel images={[Naruto, Sakura, Sasuke]} />
                 </CarouselCard>
-                <section> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ab? Voluptas consectetur ducimus atque culpa corporis enim! Maxime dolorum facilis voluptas, cum odio molestias nam necessitatibus expedita suscipit ab et?</p></section>
+
+                <InformationCard data={projects[1]} />
                 <CarouselCard>
                     <Carousel images={[Gaara, Kankuro, Temari]} />
                 </CarouselCard>
-                <section> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ab? Voluptas consectetur ducimus atque culpa corporis enim! Maxime dolorum facilis voluptas, cum odio molestias nam necessitatibus expedita suscipit ab et?</p></section>
+
+                <InformationCard data={projects[2]} />
                 <CarouselCard>
                     <Carousel images={[Tenten, Neji, Rocklee]} />
                 </CarouselCard>

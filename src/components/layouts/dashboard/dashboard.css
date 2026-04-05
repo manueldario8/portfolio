@@ -17,6 +17,15 @@
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+.txtc-dark {
+    color: #b6b6b6;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.txtc-light {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 .devname {
     display: flex;
     flex-direction: column;
