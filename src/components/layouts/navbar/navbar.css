@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: center;
-    height: 3rem;
+    height: 4rem;
     padding: 0 3rem;
     box-shadow: 0 10px 10px rgba(0,0,0,.3);
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -51,21 +51,24 @@
     text-decoration: none;
     color: #dae3d9;
     transition: all 0.25s ease;
+    font-size: 22px;
 }
 
 .nav-center a:hover {
     color: #ffffff;
     text-shadow: 0 0 8px rgba(255,255,255,0.6);
-    transform: translateY(-2px);
+    transform: translateY(-2px); 
+    transition: all 0.25s ease;
 }
 
 .logo:hover {
     color: #ffffff;
     text-shadow: 0 0 8px rgba(255,255,255,0.6);
-    transform: translateY(-2px);
+    transform: translateY(-2px);  
+    transition: all 0.25s ease;
 }
 
-.nav-center a::after{
+/*.nav-center a::after{
     content: "";
     position: absolute;
     left: 0;
@@ -89,7 +92,7 @@
 
 .nav-center a:hover::after, .logo:hover::after {
     width: 100%;
-}
+}*/
 
 
 .source-icon {
@@ -133,4 +136,21 @@ button {
 .nav-actions {
     display: flex;
     align-items: center;
+}
+
+.pic-pr-nav {
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.pic-pr-nav img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin-top: -18px;
+    margin-left: -2px;
 }

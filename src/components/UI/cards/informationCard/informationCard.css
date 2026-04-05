@@ -9,10 +9,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 3rem;
-    padding: 3rem 0.5rem; 
-    border-radius: 5%;margin: 0.5rem;
-    
 }
 
 .up-inner {
@@ -23,6 +19,9 @@
     align-items: center;
     background-color: darkgray;
     background: rgba(0, 0, 0, 0.2); 
+    max-width: 600px;
+    min-width: 600px;
+    border-radius: 25px;
     
 }   
 
@@ -53,7 +52,7 @@
 .main-sc-title {
     font-size: 30px;
     font-weight: 700;
-    color: rgb(192, 207, 56);
+    color: rgb(248, 246, 138);
     text-shadow: 0 0 1px rgb(7, 8, 26);
 }
 
@@ -61,7 +60,7 @@
     
     font-size: 24px;
     font-weight: 400;
-    color: rgb(133, 156, 51);
+    color: rgb(248, 246, 138);
     text-shadow: 0 0 1px rgb(22, 23, 73);
 }
 
@@ -74,7 +73,8 @@
     justify-content: start;
     border-radius: 15px;
     padding: 1rem;
-    gap: 10px;   
+    gap: 10px; 
+    overflow-y: auto;
 }
 
 .view-tecnologies {
@@ -99,4 +99,22 @@
 
 .btn-reviewCode button:hover {
     text-shadow: 0 0 5px white;
+}
+
+
+.card-screem::-webkit-scrollbar {
+    width: 8px;
+}
+
+.card-screem::-webkit-scrollbar-track {
+    background: transparent; /* fondo */
+}
+
+.card-screem::-webkit-scrollbar-thumb {
+    background-color: rgb(75, 75, 75); /* color del scroll */
+    border-radius: 10px;
+}
+
+.card-screem::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(120, 120, 120);
 }

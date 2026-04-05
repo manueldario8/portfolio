@@ -3,6 +3,7 @@ import { ENicon, ESicon, SUNicon, MOONicon } from '../../../assets/exports';
 import { useTheme } from '../../../context/ThemeContext';
 import './navbar.css';
 import React from 'react';
+import { ProfilePicture2 } from '../../../assets/exports';
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
@@ -11,8 +12,8 @@ const Navbar = () => {
 
   const texts = {
     es: {
-      works: "Trabajos",
-      wallpapers: "Muestrario",
+      works: "Proyectos",
+      wallpapers: "Imágenes",
       about: "Sobre mí",
       dev: "Desarrollo",
       source: "Código"
@@ -31,6 +32,9 @@ const Navbar = () => {
       <nav className={`navbar ${theme}`}>
         <div className="inner-nav">
           <div className="nav-left">
+            <div className='pic-pr-nav'>
+              <img src={ProfilePicture2} alt="Manuel Darío Dev" />
+            </div>
             <Link to="/home" className="logo">
               Manuel Darío
             </Link>

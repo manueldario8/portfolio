@@ -12,12 +12,12 @@ const Carousel = ({ images }: CarouselProps) => {
     <>
       <div className="carousel" style={{ transform: `translateX(-${index * 100}%)`, transition: 'transform 0.3s ease' }}>
 
-        <button onClick={() => setIndex(index - 1)} className='btn-carousel'>Prev</button>
+        <button onClick={() => setIndex(index - 1)} className='btn-carousel'><i className="fa-solid fa-chevron-left"></i></button>
 
         {images.map((src, i) => (
           <img key={i} src={src} alt={`slide-${i}`} />
         ))}
-        <button onClick={() => setIndex(index + 1)} className='btn-carousel'>Next</button>
+        <button onClick={() => setIndex(index + 1)} className='btn-carousel'><i className="fa-solid fa-chevron-right"></i></button>
       </div>
       
 

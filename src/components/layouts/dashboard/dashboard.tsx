@@ -9,7 +9,7 @@ const projects = [
         sections: {
             Resumen: {
                 title: 'Resumen',
-                description: 'Una aplicación web que maneja la subida, edición y administración de productos, proveedores y categorías, con interfaz de usuario amigable'
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, temporibus quam animi, quae fugit odit non laborum nam quas soluta nostrum debitis, vero totam! Consectetur ipsum autem beatae esse mollitia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, temporibus quam animi, quae fugit odit non laborum nam quas soluta nostrum debitis, vero totam! Consectetur ipsum autem beatae esse mollitia. Una aplicación web que maneja la subida, edición y administración de productos, proveedores y categorías, con interfaz de usuario amigable'
             },
             Desarrollo: {
                 title: 'Desarrollo',
@@ -24,7 +24,7 @@ const projects = [
                 description: 'El backend de este proyecto está compuesto por tecnologías del ambiente .NET, principalmente C# y EntityFramework, también su base de datos se maneja con SQL Server, sus sistemas de autentificación se implementan con JWT y la subida de imáenes en el storage con Cloudinary'
             }
         },
-        technologies: ['React', 'C#', 'SQL Server','HTML', 'CSS','Entity Framework'],
+        technologies: ['React', 'C#', 'SQL Server', 'HTML', 'CSS', 'Entity Framework'],
         github: 'https://github.com',
         demo: 'https://demo.com'
     },
@@ -90,28 +90,34 @@ const Dashboard = () => {
                 <span><p>Fullstack .NET & React</p></span>
                 <span className="buttons-contact">
                     <Button onClick={() => window.open("https://www.linkedin.com/in/manueldario8")}>
-                        LinkedIn
+                        <i className="fa-brands fa-linkedin"></i> LinkedIn
                     </Button>
                     <Button onClick={() => window.open("https://google.com")}>
-                        Descargar CV
+                        <i className="fa-solid fa-file-arrow-down"></i> Descargar CV
                     </Button>
                 </span>
             </header>
             <main className={`dashboard txtc-${theme}`}>
-                <InformationCard data={projects[0]} />
-                <CarouselCard>
-                    <Carousel images={[Naruto, Sakura, Sasuke]} />
-                </CarouselCard>
 
-                <InformationCard data={projects[1]} />
-                <CarouselCard>
-                    <Carousel images={[Gaara, Kankuro, Temari]} />
-                </CarouselCard>
+                <section className='dual-pj-card'>
+                    <InformationCard data={projects[0]} />
+                    <CarouselCard>
+                        <Carousel images={[Naruto, Sakura, Sasuke]} />
+                    </CarouselCard>
+                </section>
 
-                <InformationCard data={projects[2]} />
-                <CarouselCard>
-                    <Carousel images={[Tenten, Neji, Rocklee]} />
-                </CarouselCard>
+                <section className='dual-pj-card'>
+                    <InformationCard data={projects[1]} />
+                    <CarouselCard>
+                        <Carousel images={[Gaara, Kankuro, Temari]} />
+                    </CarouselCard>
+                </section>
+                <section className='dual-pj-card'>
+                    <InformationCard data={projects[2]} />
+                    <CarouselCard>
+                        <Carousel images={[Tenten, Neji, Rocklee]} />
+                    </CarouselCard>
+                </section>
             </main>
         </>
     );

@@ -31,17 +31,18 @@ const InformationCard = ({ data }: InformationCardProps) => {
   return (
     <div className="information-container">
       <div className="inner-information">
-
         <div className="up-inner">
           <h3 className='main-sc-title'>Proyecto</h3>
           <h4 className='main-pj-title'>{data.name}</h4>
 
           <div className="view-actions">
+            <button><i className="fa-solid fa-angles-left"></i></button>
             {sections.map(section => (
               <button key={section} className="btn-action" onClick={() => setActiveSection(section)}>
                 {section}
               </button>
             ))}
+            <button><i className="fa-solid fa-angles-right"></i></button>
           </div>
           <section className='card-screem'>
           <h3>{current.title}</h3>
@@ -52,6 +53,7 @@ const InformationCard = ({ data }: InformationCardProps) => {
 
           <section className=' btn-reviewCode'>
             <a href={data.github} target="_blank" rel="noopener noreferrer">
+            
               <button className="btn-code">Github</button>
             </a>
 
