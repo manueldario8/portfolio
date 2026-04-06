@@ -1,15 +1,15 @@
 import './dashboard.css';
 import { Carousel, CarouselCard, Button, InformationCard } from '../../exports';
 import { useTheme } from '../../../context/ThemeContext';
-import { Naruto, Sasuke, Sakura, Gaara, Temari, Kankuro, Rocklee, Tenten, Neji } from '../../../assets/exports';
+import { Naruto, Sasuke, Sakura, Gaara, Temari, Kankuro, Rocklee, Tenten, Neji, Example } from '../../../assets/exports';
 
 const projects = [
     {
-        name: 'Stock Manager',
+        name: 'Stock manager con login de usuarios',
         sections: {
             Resumen: {
                 title: 'Resumen',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, temporibus quam animi, quae fugit odit non laborum nam quas soluta nostrum debitis, vero totam! Consectetur ipsum autem beatae esse mollitia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, temporibus quam animi, quae fugit odit non laborum nam quas soluta nostrum debitis, vero totam! Consectetur ipsum autem beatae esse mollitia. Una aplicación web que maneja la subida, edición y administración de productos, proveedores y categorías, con interfaz de usuario amigable'
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, temporibus quam animi, quae fugit odit non laborum nam quas soluta nostrum debitis, vero totam! Consectetur ipsum autem beatae esse mollitia. Una aplicación web que maneja la subida, edición y administración de productos, proveedores y categorías, con interfaz de usuario amigable'
             },
             Desarrollo: {
                 title: 'Desarrollo',
@@ -29,7 +29,7 @@ const projects = [
         demo: 'https://demo.com'
     },
     {
-        name: 'Proyecto Gaara',
+        name: 'ECommerce',
         sections: {
             Resumen: {
                 title: 'Resumen',
@@ -53,7 +53,7 @@ const projects = [
         demo: 'https://demo.com'
     },
     {
-        name: 'Proyecto Lee',
+        name: 'Chess game vs IA',
         sections: {
             Resumen: {
                 title: 'Resumen',
@@ -92,9 +92,9 @@ const Dashboard = () => {
                     <Button onClick={() => window.open("https://www.linkedin.com/in/manueldario8")}>
                         <i className="fa-brands fa-linkedin"></i> LinkedIn
                     </Button>
-                    <Button onClick={() => window.open("https://google.com")}>
-                        <i className="fa-solid fa-file-arrow-down"></i> Descargar CV
-                    </Button>
+                    <a href='../../../../public/Manuel_Dario_Marquez.pdf' download>
+                        <Button><i className="fa-solid fa-file-arrow-down"></i> Descargar CV</Button>
+                    </a>
                 </span>
             </header>
             <main className={`dashboard txtc-${theme}`}>

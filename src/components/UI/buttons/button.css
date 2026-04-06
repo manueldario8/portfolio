@@ -4,6 +4,7 @@
     border-radius: 25px;
     font-weight: 550;
     cursor: pointer;
+    min-width: 145px;
 }
 
 .btn-light {

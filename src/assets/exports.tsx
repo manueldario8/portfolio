@@ -15,5 +15,7 @@ export { default as  Sasuke } from './images/sasuke.jpg';
 export { default as  Naruto } from './images/naruto.png';
 export { default as  Sakura } from './images/sakura.jpg';
 
-export { default as ProfilePicture1 } from './manueldario1.jpeg'
-export { default as ProfilePicture2 } from './manueldario2.jpeg'
+export { default as Example } from './images/example.jpeg';
+
+export { default as ProfilePicture1 } from './manueldario1.jpeg';
+export { default as ProfilePicture2 } from './manueldario2.jpeg';

@@ -1,14 +1,7 @@
-.information-container {
-    display: flex;
-    max-width: 800px;
-    height: 600px;
-    justify-content: center;
-}
-
 .inner-information {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    margin-left: 2rem;
 }
 
 .up-inner {
@@ -17,7 +10,6 @@
     padding: 1rem;
     flex-direction: column;
     align-items: center;
-    background-color: darkgray;
     background: rgba(0, 0, 0, 0.2); 
     max-width: 600px;
     min-width: 600px;
@@ -32,36 +24,51 @@
     border-radius: 20px;
     background-color: rgb(33, 33, 33);
     overflow: hidden;
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
 }
 
 .view-actions .btn-action {
     flex: 1; 
     border: none;
-    color: white;
+    color: #EDDEE0;
     height: 100%;
     margin: 0 1rem;
 }
 
-.view-actions .btn-action:hover {
-    
-    text-shadow: 0 0 10px rgba(255,255,255,0.8);
+.btn-action {
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.btn-action.active {
+  text-shadow: 0 0 10px white;
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+
+.view-actions i { 
+    color: #EDDEE0;
+}
+
+.view-actions i:hover { 
+    text-shadow: 0 0 10px rgba(255,255,255,1);
     transition: all 0.25s ease;
 }
 
-.main-sc-title {
-    font-size: 30px;
-    font-weight: 700;
-    color: rgb(248, 246, 138);
-    text-shadow: 0 0 1px rgb(7, 8, 26);
+.view-actions .btn-action:hover {
+    
+    text-shadow: 0 0 10px rgba(255,255,255,1);
+    transition: all 0.25s ease;
 }
 
 .main-pj-title {
     
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     color: rgb(248, 246, 138);
     text-shadow: 0 0 1px rgb(22, 23, 73);
+
 }
 
 .card-screem {
@@ -83,17 +90,18 @@
     justify-content: space-around;
     padding: 0.2rem;
     margin-bottom: 10px;
+    color: #EDDEE0;
 }
 
 .btn-reviewCode{
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(33, 33, 33);
     display: flex;
     gap: 1rem;
     border-radius: 15px;
-    box-shadow: 0 0 2px white;
+    box-shadow: 0 0 4px white;
 }
 .btn-reviewCode button {
-    color: rgb(146, 146, 146);
+    color: #EDDEE0;
     margin: 10px;
 }
 
@@ -107,11 +115,11 @@
 }
 
 .card-screem::-webkit-scrollbar-track {
-    background: transparent; /* fondo */
+    background: transparent; 
 }
 
 .card-screem::-webkit-scrollbar-thumb {
-    background-color: rgb(75, 75, 75); /* color del scroll */
+    background-color: rgb(75, 75, 75); 
     border-radius: 10px;
 }
 
