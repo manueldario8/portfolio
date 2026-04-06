@@ -9,22 +9,22 @@ const projects = [
         sections: {
             Resumen: {
                 title: 'Resumen',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, temporibus quam animi, quae fugit odit non laborum nam quas soluta nostrum debitis, vero totam! Consectetur ipsum autem beatae esse mollitia. Una aplicación web que maneja la subida, edición y administración de productos, proveedores y categorías, con interfaz de usuario amigable'
+                description: 'Un proyecto integrador de una aplicación completa de manejo de entidades que sirve también como API para una Ecommerce. El punto fuerte de esta aplicación es el control y manejo de datos de proveedores, productos, categorías y órdenes. Así mismo se le provee al usuario que quiera manejar la API una interfaz agradable e intuitiva para que pueda hacer las típicas operaciones de datos (CRUD) sobre las entidades que requieran ser mostradas en una ECommerce.'
             },
             Desarrollo: {
                 title: 'Desarrollo',
-                description: 'En esta aplicación los puntos claves a desarrollar era la posibilidad de integrar procesos de autentificación de ususarios, roles, manejo de datos usando Entity Framework'
+                description: 'Acerca del desarrollo de este proyecto se pueden destacar el uso de autenticación y autorización por roles para los diferentes usuarios, también los respectivos '
             },
             Frontend: {
                 title: 'Frontend',
-                description: 'Para el desarrollo del frontend de esta aplicación utilicé React, CSS, HTML y TypeScript'
+                description: 'El desarrollo de la interfaz está hecho en su totalidad con React.JS y Typescript, CSS y HTML.'
             },
             Backend: {
                 title: 'Backend',
-                description: 'El backend de este proyecto está compuesto por tecnologías del ambiente .NET, principalmente C# y EntityFramework, también su base de datos se maneja con SQL Server, sus sistemas de autentificación se implementan con JWT y la subida de imáenes en el storage con Cloudinary'
+                description: 'El backend de este proyecto está compuesto por tecnologías del ambiente .NET, principalmente C# y EntityFramework, también su base de datos se maneja con SQL Server, sus sistemas de autentificación se implementan con JWT y la subida de imágenes en el storage con Cloudinary.'
             }
         },
-        technologies: ['React', 'C#', 'SQL Server', 'HTML', 'CSS', 'Entity Framework'],
+        technologies: ['React', 'TypeScript', 'CSS', 'HTML', 'C#', 'Entity Framework'],
         github: 'https://github.com',
         demo: 'https://demo.com'
     },
