@@ -1,7 +1,7 @@
 import './dashboard.css';
 import { Carousel, CarouselCard, Button, InformationCard } from '../../exports';
 import { useTheme } from '../../../context/ThemeContext';
-import { Naruto, Sasuke, Sakura, Gaara, Temari, Kankuro, Rocklee, Tenten, Neji, Example } from '../../../assets/exports';
+import { Naruto, Sasuke, Sakura, Gaara, Temari, Kankuro, Rocklee, Tenten, Neji} from '../../../assets/exports';
 
 const projects = [
     {
