@@ -1,10 +1,10 @@
-/*Mobile base design*/
+/*Mobile base design (iphone 14pro max*/
 .preview {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.2rem;
-    height: 38vh;
+    height: 50vh;
     padding: 6rem 0.2rem;
 }
 
@@ -26,12 +26,12 @@
 
 .devname h1 {
     color:#EDDEE0;
-    font-size: 2.5rem; 
+    font-size: 2.3rem; 
     cursor:default;
 }
 
 .devname h2 { 
-    font-size: 2.5rem; 
+    font-size: 2.3rem; 
     color: rgb(248, 246, 138);
     cursor:default;
 }
