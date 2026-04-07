@@ -100,7 +100,7 @@ const Dashboard = () => {
             <main className={`dashboard txtc-${theme}`}>
 
                 <section className='dual-pj-card'>
-                    <InformationCard data={projects[0]} />
+                    <InformationCard data={projects[0]}/>
                     <CarouselCard>
                         <Carousel images={[Naruto, Sakura, Sasuke]} />
                     </CarouselCard>
