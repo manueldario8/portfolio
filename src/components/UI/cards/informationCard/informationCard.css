@@ -1,38 +1,39 @@
 .inner-information {
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
+    width: 100%;
+    
 }
 
 .up-inner {
     display: flex;
-    gap: 0.6rem;
-    padding: 1rem;
     flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
     background: rgba(0, 0, 0, 0.2); 
-    max-width: 600px;
-    min-width: 600px;
     border-radius: 25px;
-    
 }   
 
 .view-actions {
     display: flex;
-    max-width: 600px;
+    align-items: center;
     padding: 1rem;
     border-radius: 20px;
     background-color: rgb(33, 33, 33);
-    overflow: hidden;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-mini-cr {
+    font-size: 18px;
 }
 
 .view-actions .btn-action {
-    flex: 1; 
     border: none;
     color: #EDDEE0;
     height: 100%;
-    margin: 0 1rem;
+    margin: 0 0.4rem;
+    font-size: 16px;
 }
 
 .btn-action {
@@ -40,15 +41,15 @@
   transition: 0.2s;
 }
 
-.btn-action.active {
-  text-shadow: 0 0 10px white;
+.btn-action .mini-active {
+  text-shadow: 0 0 10px #EDDEE0;
   opacity: 1;
-  transform: scale(1.05);
+  /*transform: scale(1.05);*/
 }
 
 
 .view-actions i { 
-    color: #EDDEE0;
+    color: #eddee0cc;
 }
 
 .view-actions i:hover { 
@@ -64,33 +65,38 @@
 
 .main-pj-title {
     
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
     color: rgb(248, 246, 138);
     text-shadow: 0 0 1px rgb(22, 23, 73);
 
 }
 
 .card-screem {
-    border: 2px solid rgb(75, 75, 75);
-    width: 100%;
-    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    height: 200px;
+    border: 2px solid rgb(75, 75, 75);
     border-radius: 15px;
     padding: 1rem;
     gap: 10px; 
     overflow-y: auto;
 }
 
+
 .view-tecnologies {
     display: flex;
-    width: 100%;
     justify-content: space-around;
-    padding: 0.2rem;
+    width: 100%;
+    gap: 5px;
+    padding: 0.1rem;
     margin-bottom: 10px;
-    color: #EDDEE0;
+    color: #EDDEE0cc;
+}
+
+.view-tecnologies p {
+    font-size: 17px;
 }
 
 .btn-reviewCode{
@@ -101,14 +107,13 @@
     box-shadow: 0 0 4px white;
 }
 .btn-reviewCode button {
-    color: #EDDEE0;
+    color: #EDDEE0cc;
     margin: 10px;
 }
 
 .btn-reviewCode button:hover {
     text-shadow: 0 0 5px white;
 }
-
 
 .card-screem::-webkit-scrollbar {
     width: 8px;

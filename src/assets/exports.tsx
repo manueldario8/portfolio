@@ -19,3 +19,5 @@ export { default as Example } from './images/example.jpeg';
 
 export { default as ProfilePicture1 } from './manueldario1.jpeg';
 export { default as ProfilePicture2 } from './manueldario2.jpeg';
+
+export { default as ManuelDarioPDF } from './Manuel_Dario_Marquez.pdf';

@@ -40,7 +40,7 @@ const InformationCard = ({ data }: InformationCardProps) => {
         <div className="view-actions">
           <button onClick={handlePrev}><i className="fa-solid fa-angles-left"></i></button>
           {sections.map((section, index) => (
-            <button key={section} className={`btn-action ${activeIndex === index ? 'active' : ''}`} onClick={() => setActiveIndex(index)}>
+            <button key={section} className={`btn-action mini-${activeIndex === index ? 'active' : ''}`} onClick={() => setActiveIndex(index)}>
               {section}
             </button>
           ))}

@@ -1,7 +1,7 @@
 import './dashboard.css';
 import { Carousel, CarouselCard, Button, InformationCard } from '../../exports';
 import { useTheme } from '../../../context/ThemeContext';
-import { Naruto, Sasuke, Sakura, Gaara, Temari, Kankuro, Rocklee, Tenten, Neji} from '../../../assets/exports';
+import { Naruto, Sasuke, Sakura, Gaara, Temari, Kankuro, Rocklee, Tenten, Neji, ManuelDarioPDF} from '../../../assets/exports';
 
 const projects = [
     {
@@ -92,7 +92,7 @@ const Dashboard = () => {
                     <Button onClick={() => window.open("https://www.linkedin.com/in/manueldario8")}>
                         <i className="fa-brands fa-linkedin"></i> LinkedIn
                     </Button>
-                    <a href='../../../../public/Manuel_Dario_Marquez.pdf' download>
+                    <a href={ManuelDarioPDF} download>
                         <Button><i className="fa-solid fa-file-arrow-down"></i> Descargar CV</Button>
                     </a>
                 </span>
