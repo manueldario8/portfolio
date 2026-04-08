@@ -14,7 +14,7 @@
 }
 
 .pv-light{
-    background: #1b8df7;
+    background: #86bbec;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -25,15 +25,46 @@
 }
 
 .devname h1 {
-    color:#EDDEE0;
+    color:#2e2a2a;
     font-size: 2.3rem; 
     cursor:default;
+    transition: color 0.3s ease;
+}
+
+.devname .h1-stl-dark {
+    color:#EDDEE0;
+    transition: color 0.3s ease;
 }
 
 .devname h2 { 
     font-size: 2.3rem; 
-    color: rgb(248, 246, 138);
+    color: rgb(61, 61, 55);
     cursor:default;
+    transition: color 0.3s ease;
+}
+
+.devname .h2-stl-dark {
+    color: rgb(248, 246, 138);
+    transition: color 0.3s ease;
+}
+
+.preview  span p {
+    color:#3a3637; 
+    font-size: 20px;  
+    cursor:default;
+    transition: color 0.3s ease;
+}
+
+.preview .spanp-stl-dark p {
+    color: rgb(248, 246, 138);
+    transition: color 0.3s ease;
+}
+
+
+
+.buttons-contact {
+    display: flex;
+    gap: 1rem;
 }
 
 .dashboard {
@@ -41,6 +72,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 2.5rem;
+    gap: 8rem;
 }
 
 .txtc-dark {
@@ -49,31 +81,24 @@
 }
 
 .txtc-light {
+    color: #dae3d9;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.preview  span p {
-    color:#beb3b4; 
-    font-size: 20px;  
-    cursor:default;
-}
 
-.buttons-contact {
-    display: flex;
-    gap: 1rem;
-}
 .dual-pj-card {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    flex-direction: column-reverse;
     max-width: 412px;
     max-height: 840px;
+    margin-top: 5rem;
+    border: 1px solid red;
 }
 
 @media (min-width: 1024px) {
 
 .preview { 
-    height: 38vh;
+    height: 45vh;
 }
 .devname h1, .devname h2 {
     font-size: 3rem; 
@@ -81,7 +106,7 @@
 
 .dashboard {
     margin-top: 4rem;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .dual-pj-card {

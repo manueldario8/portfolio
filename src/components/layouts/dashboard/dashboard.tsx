@@ -84,10 +84,10 @@ const Dashboard = () => {
         <>
             <header className={`preview pv-${theme}`}>
                 <div className="devname">
-                    <h2>Software Developer</h2>
-                    <h1>Manuel Darío</h1>
+                    <h2 className={`h2-stl-${theme}`}>Software Developer</h2>
+                    <h1 className={`h1-stl-${theme}`}>Manuel Darío</h1>
                 </div>
-                <span><p>Fullstack .NET & React</p></span>
+                <span className={`spanp-stl-${theme}`}><p>Fullstack .NET & React</p></span>
                 <span className="buttons-contact">
                     <Button onClick={() => window.open("https://www.linkedin.com/in/manueldario8")}>
                         <i className="fa-brands fa-linkedin"></i> LinkedIn
@@ -98,14 +98,12 @@ const Dashboard = () => {
                 </span>
             </header>
             <main className={`dashboard txtc-${theme}`}>
-
                 <section className='dual-pj-card'>
                     <InformationCard data={projects[0]}/>
                     <CarouselCard>
                         <Carousel images={[Naruto, Sakura, Sasuke]} />
                     </CarouselCard>
                 </section>
-
                 <section className='dual-pj-card'>
                     <InformationCard data={projects[1]} />
                     <CarouselCard>

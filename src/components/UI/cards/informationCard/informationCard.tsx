@@ -1,5 +1,6 @@
 import './informationCard.css';
 import { useState } from 'react';
+import { useTheme } from '../../../../context/ThemeContext';
 
 type SectionKey = 'Resumen' | 'Desarrollo' | 'Frontend' | 'Backend';
 
@@ -24,23 +25,24 @@ const sections: SectionKey[] = ['Resumen', 'Desarrollo', 'Frontend', 'Backend'];
 
 const InformationCard = ({ data }: InformationCardProps) => {
 
-  const [activeIndex, setActiveIndex] = useState(0);
-  const activeSection = sections[activeIndex];
-  const current = data.sections[activeSection];
+const [activeIndex, setActiveIndex] = useState(0);
+const activeSection = sections[activeIndex];
+const current = data.sections[activeSection];
 
-  const handlePrev = () => { setActiveIndex(prev => (prev === 0 ? sections.length - 1 : prev - 1)); };
+const handlePrev = () => { setActiveIndex(prev => (prev === 0 ? sections.length - 1 : prev - 1)); };
 
-  const handleNext = () => { setActiveIndex(prev => (prev === sections.length - 1 ? 0 : prev + 1)); };
+const handleNext = () => { setActiveIndex(prev => (prev === sections.length - 1 ? 0 : prev + 1)); };
+const { theme } = useTheme();
 
-  return (
+return (
     <div className="inner-information">
-      <div className="up-inner">
-        <h3 className='main-pj-title'>{data.name}</h3>
+      <div className={`up-inner stl-${theme}`}>
+        <h3 className={`main-pj-title ttl-${theme}`}>{data.name}</h3>
 
-        <div className="view-actions">
+        <div className={`view-actions actn-${theme}`}>
           <button onClick={handlePrev}><i className="fa-solid fa-angles-left"></i></button>
           {sections.map((section, index) => (
-            <button key={section} className={`btn-action mini-${activeIndex === index ? 'active' : ''}`} onClick={() => setActiveIndex(index)}>
+            <button key={section} className={`btn-action actnav-${theme} mini-${activeIndex === index ? 'active' : ''}`} onClick={() => setActiveIndex(index)}>
               {section}
             </button>
           ))}
@@ -57,7 +59,7 @@ const InformationCard = ({ data }: InformationCardProps) => {
           </section>
         </section>
 
-        <section className=' btn-reviewCode'>
+        <section className={`btn-reviewCode lt-${theme}`}>
           <a href={data.github} target="_blank">
             <button className="btn-code">Github</button>
           </a>

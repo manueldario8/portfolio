@@ -1,4 +1,5 @@
 .inner-information {
+    margin-top: 1.3px;
     display: flex;
     flex-direction: column;
     width: 100%;  
@@ -10,18 +11,40 @@
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background: rgba(0, 0, 0, 0.2); 
+    background: #317185; 
     border-radius: 25px;
-}   
+} 
+
+.stl-dark {
+    background: rgba(0, 0, 0, 0.2); 
+}
+.main-pj-title {
+    
+    font-size: 26px;
+    font-weight: 400;
+    color: rgb(37, 37, 37);
+    text-shadow: 0 0 1px rgb(22, 23, 73);
+
+}
+
+.ttl-dark {
+    color: rgb(248, 246, 138);
+}  
+
 
 .view-actions {
     display: flex;
     align-items: center;
     padding: 1rem;
     border-radius: 20px;
-    background-color: rgb(33, 33, 33);
+    background-color: #dae3d9;
     margin-bottom: 0.5rem;
 }
+
+.actn-dark {
+    background-color: rgb(33, 33, 33);
+}
+
 
 .btn-mini-cr {
     font-size: 18px;
@@ -30,11 +53,16 @@
 
 .view-actions .btn-action {
     border: none;
-    color: #EDDEE0;
+    font-weight: 700;
+    color: #3a3637;
     height: 100%;
-    margin: 0 0.4rem;
+    margin: 0 0.3rem;
     font-size: 16px;
 }
+
+.view-actions .actnav-dark {
+    color: rgb(178, 178, 178);
+} 
 
 .btn-action {
   opacity: 0.6;
@@ -42,7 +70,7 @@
 }
 
 .btn-action .mini-active {
-  text-shadow: 0 0 10px #EDDEE0;
+  text-shadow: 0 0 10px #3a3637;
   opacity: 1;
   /*transform: scale(1.05);*/
 }
@@ -50,25 +78,22 @@
 
 .view-actions i { 
     opacity: 0.7;
-    color: #eddee0cc;
+    color: #3a3637;
+}
+
+.actn-dark i {
+    color: rgb(154, 152, 152);
 }
 
 
-.main-pj-title {
-    
-    font-size: 22px;
-    font-weight: 500;
-    color: rgb(248, 246, 138);
-    text-shadow: 0 0 1px rgb(22, 23, 73);
 
-}
 
 .card-screem {
     display: flex;
     flex-direction: column;
     justify-content: start;
     height: 200px;
-    border: 2px solid rgb(75, 75, 75);
+    border: 2px solid rgb(170, 170, 170);
     border-radius: 15px;
     padding: 1rem;
     gap: 10px; 
@@ -92,16 +117,27 @@
 }
 
 .btn-reviewCode{
-    background-color: rgb(33, 33, 33);
+    background-color: #6d6d6d;
     display: flex;
     gap: 1rem;
     border-radius: 15px;
     box-shadow: 0 0 4px white;
 }
+
+.lt-dark {
+    background-color: #daccaf;
+}
+
+
 .btn-reviewCode button {
     color: #EDDEE0cc;
     margin: 10px;
 }
+
+.lt-dark button {
+    color:#1d3460;
+}
+
 
 .btn-reviewCode button:hover {
     text-shadow: 0 0 5px white;

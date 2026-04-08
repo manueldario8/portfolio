@@ -1,16 +1,16 @@
+import './navbar.css';
+import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { ENicon, ESicon, SUNicon, MOONicon } from '../../../assets/exports';
 import { useTheme } from '../../../context/ThemeContext';
-import './navbar.css';
-import React from 'react';
 import { ProfilePicture2 } from '../../../assets/exports';
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
 
   const [language, setLanguage] = React.useState<"es" | "en">("es");
-  const [isOpen, setIsOpen] = React.useState(false); // 👈 clave
-
+  const [isOpen, setIsOpen] = React.useState(false); 
+  const [modalOpen, setModalOpen] = React.useState(false);
   const texts = {
     es: {
       works: "Proyectos",
@@ -26,15 +26,17 @@ const Navbar = () => {
     }
   };
 
+
+
+
   return (
     <>
       <nav className={`navbar ${theme}`}>
         <div className="inner-nav">
 
-          {/* LEFT */}
           <div className="nav-left">
-            <div className='pic-pr-nav'>
-              <img src={ProfilePicture2} alt="Manuel Darío Dev" />
+            <div className='pic-pr-nav' onClick={() => setModalOpen(true)}>
+              <img src={ProfilePicture2} alt="Manuel Darío Dev"/>
             </div>
 
             <Link to="/home" className="logo">
@@ -105,6 +107,14 @@ const Navbar = () => {
       </nav>
 
       <Outlet />
+
+      {modalOpen && (
+  <div className="modal-overlay" onClick={() => setModalOpen(false)}>
+    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+      <img src={ProfilePicture2} alt="preview" />
+    </div>
+  </div>
+)}
     </>
   );
 };
