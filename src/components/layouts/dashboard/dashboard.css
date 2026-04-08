@@ -92,7 +92,6 @@
     max-width: 412px;
     max-height: 840px;
     margin-top: 5rem;
-    border: 1px solid red;
 }
 
 @media (min-width: 1024px) {

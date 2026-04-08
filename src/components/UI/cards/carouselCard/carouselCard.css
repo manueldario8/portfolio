@@ -20,7 +20,7 @@
 @media (min-width: 1024px) {
 .carousel-container {
     min-height: 472px;
-    
+    margin-top: 0;
 }
 
 }
