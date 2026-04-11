@@ -25,8 +25,8 @@ const projects = [
             }
         },
         technologies: ['React', 'TypeScript', 'CSS', 'HTML', 'C#', 'Entity Framework'],
-        github: 'https://github.com',
-        demo: 'https://demo.com'
+        github: 'https://github.com/manueldario8/stockmanport',
+        demo: 'https://stockmanport.vercel.app'
     },
     {
         name: 'ECommerce',
