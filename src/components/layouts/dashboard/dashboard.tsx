@@ -1,32 +1,35 @@
 import './dashboard.css';
 import { Carousel, CarouselCard, Button, InformationCard } from '../../exports';
 import { useTheme } from '../../../context/ThemeContext';
-import { Naruto, Sasuke, Sakura, Gaara, Temari, Kankuro, Rocklee, Tenten, Neji, ManuelDarioPDF} from '../../../assets/exports';
+import { Cap1, Cap2, Cap3, ManuelDarioPDF} from '../../../assets/exports';
 
 const projects = [
     {
         name: 'Stock manager con login de usuarios',
         sections: {
             Resumen: {
-                title: 'Resumen',
-                description: 'Un proyecto integrador de una aplicación completa de manejo de entidades que sirve también como API para una Ecommerce. El punto fuerte de esta aplicación es el control y manejo de datos de proveedores, productos, categorías y órdenes. Así mismo se le provee al usuario que quiera manejar la API una interfaz agradable e intuitiva para que pueda hacer las típicas operaciones de datos (CRUD) sobre las entidades que requieran ser mostradas en una ECommerce.'
-            },
-            Desarrollo: {
-                title: 'Desarrollo',
-                description: 'Acerca del desarrollo de este proyecto se pueden destacar el uso de autenticación y autorización por roles para los diferentes usuarios, también los respectivos '
-            },
-            Frontend: {
-                title: 'Frontend',
-                description: 'El desarrollo de la interfaz está hecho en su totalidad con React.JS y Typescript, CSS y HTML.'
-            },
-            Backend: {
-                title: 'Backend',
-                description: 'El backend de este proyecto está compuesto por tecnologías del ambiente .NET, principalmente C# y EntityFramework, también su base de datos se maneja con SQL Server, sus sistemas de autentificación se implementan con JWT y la subida de imágenes en el storage con Cloudinary.'
-            }
+    title: 'Resumen',
+    description: 'StockManager es una aplicación de gestión de inventario diseñada bajo una arquitectura cliente-servidor desacoplada. Permite administrar productos, proveedores y operaciones de stock mediante una API REST propia. El sistema incorpora autenticación segura basada en JWT, persistencia de sesión en el cliente y despliegue en infraestructura cloud (AWS), garantizando escalabilidad, mantenibilidad y separación de responsabilidades.'
+},
+
+Desarrollo: {
+    title: 'Desarrollo',
+    description: 'El desarrollo sigue principios de arquitectura limpia, separando el sistema en capas (Core, Infrastructure y API) para aislar la lógica de negocio de los detalles de implementación. Se aplican patrones como Repository y Service para mejorar la testabilidad y el desacoplamiento. Se implementó un pipeline de CI/CD automatizado para integración y despliegue continuo, junto con la configuración manual de infraestructura en AWS (EC2 y RDS), incluyendo gestión de variables de entorno, control de accesos mediante Security Groups y resolución de problemas en producción.'
+},
+
+Frontend: {
+    title: 'Frontend',
+    description: 'El frontend está desarrollado en React con una arquitectura modular y escalable. Se implementa un cliente HTTP centralizado para la comunicación con la API y manejo consistente de errores. La autenticación se gestiona mediante JWT con persistencia en localStorage, incluyendo protección de rutas y control de sesión. Se prioriza la separación de responsabilidades en componentes, reutilización de lógica y una base preparada para crecimiento (features desacopladas y mantenibles).'
+},
+
+Backend: {
+    title: 'Backend',
+    description: 'La API está desarrollada en ASP.NET Core utilizando Entity Framework para la persistencia de datos. Implementa autenticación y autorización mediante JWT, validaciones de dominio y una estructura basada en capas que desacopla controladores, servicios y repositorios. Se integra con Cloudinary para la gestión de archivos multimedia. Incluye manejo de configuración por entorno, despliegue en EC2 y conexión a base de datos en RDS. Se contemplan buenas prácticas como separación de contratos, manejo de errores y diseño orientado a escalabilidad.'
+}
         },
         technologies: ['React', 'TypeScript', 'CSS', 'HTML', 'C#', 'Entity Framework'],
-        github: 'https://github.com/manueldario8/stockmanport',
-        demo: 'https://stockmanport.vercel.app'
+        github: 'https://github.com/manueldario8/StockManagerVercel',
+        demo: 'https://stockmanager-manueldario.vercel.app/'
     },
     {
         name: 'ECommerce',
@@ -101,19 +104,19 @@ const Dashboard = () => {
                 <section className='dual-pj-card'>
                     <InformationCard data={projects[0]}/>
                     <CarouselCard>
-                        <Carousel images={[Naruto, Sakura, Sasuke]} />
+                        <Carousel images={[Cap1, Cap2, Cap3]} />
                     </CarouselCard>
                 </section>
                 <section className='dual-pj-card'>
                     <InformationCard data={projects[1]} />
                     <CarouselCard>
-                        <Carousel images={[Gaara, Kankuro, Temari]} />
+                        <Carousel images={[Cap1, Cap2, Cap3]} />
                     </CarouselCard>
                 </section>
                 <section className='dual-pj-card'>
                     <InformationCard data={projects[2]} />
                     <CarouselCard>
-                        <Carousel images={[Tenten, Neji, Rocklee]} />
+                        <Carousel images={[Cap1, Cap2, Cap3]} />
                     </CarouselCard>
                 </section>
             </main>

@@ -5,17 +5,10 @@ export { default as MOONicon} from './night-mode.png';
 
 
 /*Imágenes para ensanblar prueba*/
-export { default as  Gaara } from './images/gaara.png';
-export { default as  Temari } from './images/temari.jpg';
-export { default as  Kankuro } from './images/kankuro.jpg';
-export { default as  Neji } from './images/neji.jpg';
-export { default as  Tenten } from './images/tenten.png';
-export { default as  Rocklee } from './images/rocklee.jpg';
-export { default as  Sasuke } from './images/sasuke.jpg';
-export { default as  Naruto } from './images/naruto.png';
-export { default as  Sakura } from './images/sakura.jpg';
+export { default as  Cap1 } from './images/Captura1.png';
+export { default as  Cap2 } from './images/Captura2.png';
+export { default as  Cap3 } from './images/Captura3.png';
 
-export { default as Example } from './images/example.jpeg';
 
 export { default as ProfilePicture1 } from './manueldario1.jpeg';
 export { default as ProfilePicture2 } from './manueldario2.jpeg';
